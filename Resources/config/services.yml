@@ -1,0 +1,12 @@
+services:
+    senj_dynamic_subdomain.listener.request.clientinjecter:
+        class: Senj\DynamicSubdomainBundle\Services\ClientInjecterRequestListener
+        arguments:
+            entityManager:  "@doctrine.orm.entity_manager"
+            base_host:      "%senj_dynamic_subdomain.base_host%"
+            parameter_name: "%senj_dynamic_subdomain.parameter_name%"
+            entity:         "%senj_dynamic_subdomain.entity%"
+            method:         "%senj_dynamic_subdomain.method%"
+            property:       "%senj_dynamic_subdomain.property%"
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }

@@ -1,0 +1,28 @@
+{
+    "name": "senj/dynamic-subdomain-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony3 Dynamic subdomain handler Bundle",
+    "keywords": ["symfony", "subdomain"],
+    "homepage": "https://github.com/senj-gold/dynamic-subdomain-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Sergey Zheleznyak",
+          "email": "senj@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": "~3.2"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-0": { "Senj\\DynamicSubdomainBundle": "" }
+    },
+    "target-dir": "Senj/DynamicSubdomainBundle",
+    "extra": {
+    }
+}
