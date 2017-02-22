@@ -20,9 +20,8 @@
     "suggest": {
     },
     "autoload": {
-        "psr-0": { "Senj\\DynamicSubdomainBundle": "" }
+        "psr-4": { "Senj\\DynamicSubdomainBundle": "" }
     },
-    "target-dir": "Senj/DynamicSubdomainBundle",
     "extra" : {
         "branch-alias" : {
             "dev-master" : "1.0.x-dev"
