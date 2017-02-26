@@ -42,7 +42,6 @@ class ClientInjecterRequestListener
             $subdomainobject = $this->entityManager->getRepository($this->entity)->{$this->method}($subdomain);
         }
 
-
         if(!$subdomainobject) {
             throw new DomainNotFoundException(sprintf(
                 'No subdomain mapped for host "%s", subdomain "%s"',
