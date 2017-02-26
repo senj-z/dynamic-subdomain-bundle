@@ -2,15 +2,12 @@
 
 namespace Senj\DynamicSubdomainBundle\Services;
 
-use Symfony\Component\HttpKernel\HttpKernel;
-use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Doctrine\ORM\EntityManager;
 use Senj\DynamicSubdomainBundle\Exception\DomainNotFoundException;
 
 class ClientInjecterRequestListener
 {
-
     private $entityManager;
     private $base_host;
     private $parameter_name;
@@ -27,7 +24,10 @@ class ClientInjecterRequestListener
         $this->method = $method;
         $this->property = $property;
     }
-
+    
+    /**
+     * @param GetResponseEvent $event
+     */
     public function onKernelRequest(GetResponseEvent $event)
     {
         $request = $event->getRequest();

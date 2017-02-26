@@ -15,7 +15,7 @@ In `app/AppKernel.php`:
 ```php
 $bundles = array(
     # [...]
-    new Senj\DynamicSubdomainBundle\NetgustoDynamicSubdomainBundle(),
+    new Senj\DynamicSubdomainBundle\SenjDynamicSubdomainBundle(),
     # [...]
 );
 ```
